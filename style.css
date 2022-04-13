@@ -1,186 +1,189 @@
-                                @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
-                                * {
-                                    margin: 0;
-                                    padding: 0;
-                                }
-                                
-                                body {
-                                    font-family: "Spartan", sans-serif;
-                                    font-size: 15px;
-                                    min-height: 100vh;
-                                    justify-content: center;
-                                    align-items: center;
-                                    display: flex;
-                                    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
-                                    background-position: left top, right bottom;
-                                }
-                                
-                                 :root {
-                                    --Very-Dark-Magenta: hsl(300, 43%, 22%);
-                                    --Soft-Pink: hsl(333, 80%, 67%);
-                                    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
-                                    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
-                                    --White: hsl(0, 0%, 100%);
-                                }
-                                
-                                .container {
-                                    padding-bottom: 5rem;
-                                }
-                                
-                                .site-description,
-                                .rating-container {
-                                    text-align: center;
-                                    margin: 1rem;
-                                    max-width: 30rem;
-                                    margin: 0 auto;
-                                }
-                                
-                                .review-cards-container {
-                                    align-items: center;
-                                    margin-top: 3.33rem;
-                                }
-                                
-                                .site-description p {
-                                    line-height: 1.8;
-                                    width: 95%;
-                                    padding: .5rem;
-                                }
-                                
-                                h1 {
-                                    color: var(--Very-Dark-Magenta);
-                                    font-size: 30px;
-                                    padding-top: 5rem;
-                                }
-                                
-                                .site-description p {
-                                    color: var(--Dark-Grayish-Magenta);
-                                    margin-top: 1rem;
-                                    margin-bottom: 2rem;
-                                }
-                                
-                                .rating {
-                                    background-color: var(--Light-Grayish-Magenta);
-                                    margin: 1rem;
-                                    padding: 1rem 1rem;
-                                    border-radius: 10px;
-                                    align-items: center;
-                                }
-                                
-                                .rating p {
-                                    color: var(--Very-Dark-Magenta);
-                                    font-weight: 700;
-                                    margin-top: .5rem;
-                                }
-                                
-                                .card {
-                                    background-color: var(--Very-Dark-Magenta);
-                                    margin: 1rem;
-                                    padding: 1rem 2.33rem;
-                                    border-radius: 10px;
-                                    max-width: 27rem;
-                                }
-                                
-                                .card img {
-                                    border-radius: 50%;
-                                    width: 80%;
-                                }
-                                
-                                .profile {
-                                    display: flex;
-                                    align-items: center;
-                                }
-                                
-                                .username {
-                                    color: var(--White);
-                                    font-weight: 600;
-                                }
-                                
-                                .user-status {
-                                    color: var(--Soft-Pink);
-                                }
-                                
-                                .user-feedback {
-                                    color: var(--White);
-                                    line-height: 1.5;
-                                    margin-top: 1rem;
-                                }
-                                
-                                @media only screen and (min-width: 800px) and (max-width: 1640px) {
-                                    body {
-                                        max-width: 100vw;
-                                        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
-                                        background-position: left top, right bottom;
-                                        background-repeat: no-repeat;
-                                    }
-                                    .container {
-                                        display: grid;
-                                        grid-template-columns: 1fr 1fr;
-                                        gap: 1rem;
-                                        width: 95vw;
-                                    }
-                                    .site-description {
-                                        text-align: left;
-                                        margin: 0;
-                                        padding-left: 1rem;
-                                    }
-                                    h1,
-                                    .site-description p {
-                                        width: 75%;
-                                    }
-                                    h1 {
-                                        font-size: 2.5rem;
-                                    }
-                                    .rating-container {
-                                        margin: 0;
-                                        padding-top: 5rem;
-                                    }
-                                    .rating {
-                                        display: flex;
-                                        justify-content: space-evenly;
-                                        align-items: center;
-                                        padding: 1em;
-                                    }
-                                    .stars {
-                                        display: flex;
-                                    }
-                                    .stars img {
-                                        padding-right: .5rem;
-                                    }
-                                    .review-cards-container {
-                                        display: flex;
-                                        flex-direction: row;
-                                        grid-column: 1/3;
-                                        height: 100%;
-                                        margin: 0 auto;
-                                    }
-                                    .rating1 {
-                                        position: relative;
-                                        right: 4rem;
-                                    }
-                                    .rating3 {
-                                        position: relative;
-                                        left: 4rem;
-                                    }
-                                    .card {
-                                        max-width: 23.33rem;
-                                        padding: 2.33rem 3rem;
-                                    }
-                                    .username {
-                                        margin-bottom: .33rem;
-                                    }
-                                    .irene-card {
-                                        position: relative;
-                                        top: 2rem;
-                                    }
-                                    .anne-card {
-                                        position: relative;
-                                        top: 4rem;
-                                    }
-                                }
-                                /* .attribution {
-                            font-size: 11px;
-                            text-align: center;
-                        }
-                        .attribution a {
-                            color: hsl(228, 45%, 44%);
-                        } */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+}
+
+ :root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.container {
+    padding-bottom: 5rem;
+}
+
+.site-description,
+.rating-container {
+    text-align: center;
+    margin: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.review-cards-container {
+    align-items: center;
+    margin-top: 3.33rem;
+}
+
+.site-description p {
+    line-height: 1.8;
+    width: 95%;
+    padding: .5rem;
+}
+
+h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 30px;
+    padding-top: 5rem;
+}
+
+.site-description p {
+    color: var(--Dark-Grayish-Magenta);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.rating {
+    background-color: var(--Light-Grayish-Magenta);
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.rating p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+.card {
+    background-color: var(--Very-Dark-Magenta);
+    margin: 1rem;
+    padding: 1rem 2.33rem;
+    border-radius: 10px;
+    max-width: 27rem;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    color: var(--White);
+    font-weight: 600;
+}
+
+.user-status {
+    color: var(--Soft-Pink);
+}
+
+.user-feedback {
+    color: var(--White);
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1640px) {
+    body {
+        max-width: 100vw;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 95vw;
+    }
+    .site-description {
+        text-align: left;
+        margin: 0;
+        padding-left: 1rem;
+    }
+    h1,
+    .site-description p {
+        width: 75%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .rating-container {
+        margin: 0;
+        padding-top: 5rem;
+    }
+    .rating {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1em;
+    }
+    .stars {
+        display: flex;
+    }
+    .stars img {
+        padding-right: .5rem;
+    }
+    .review-cards-container {
+        display: flex;
+        flex-direction: row;
+        grid-column: 1/3;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .rating1 {
+        position: relative;
+        right: 4rem;
+    }
+    .rating3 {
+        position: relative;
+        left: 4rem;
+    }
+    .card {
+        max-width: 23.33rem;
+        padding: 2.33rem 3rem;
+    }
+    .username {
+        margin-bottom: .33rem;
+    }
+    .irene-card {
+        position: relative;
+        top: 2rem;
+    }
+    .anne-card {
+        position: relative;
+        top: 4rem;
+    }
+}
+
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
